@@ -10,6 +10,10 @@
     background-color: #5F4DEE;
     color: #fff;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .banner h1 {
     font-weight: 700;
@@ -28,7 +32,11 @@
 
 /* MAIN */
 .description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    flex-direction: column;
 }
 .description h6 {
     color: #5F4DEE;
@@ -39,6 +47,10 @@
 .features {
     width: 100%;
     height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
     background-color: #f1f1f1;
@@ -50,7 +62,19 @@
     color: #5F4DEE;
     text-transform: uppercase;
 }
-
+.feature_app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feature_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 /* PRICING */
 .pricing h6 {
     color: #5F4DEE;
@@ -62,4 +86,67 @@
 .card-title {
     color: #5F4DEE;
     text-transform: uppercase;
+}
+
+/* CAROUSEL */
+.carousel-item img {
+    width: 100px;
+    border-radius: 50px;
+}
+
+/* NEWWSLETTER */
+.newsletter {
+    width: 100%;
+    background-color: #f1f1f1;
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+.newsletter h6 {
+    color: #5F4DEE;
+    text-transform: uppercase;
+}
+.email_input input {
+    width: 25rem;
+}
+.email_input button {
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+/* FOOTER */
+.footer {
+    background-color: #5F4DEE;
+    height: 250px;
+}
+.footer p {
+    color: #fff;
+}
+.social_icons i {
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+/* MEDIAQ */
+@media (min-width: 900px) {
+    .banner_buttons {
+        flex-direction: row;
+    }
+
+    .description_images {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: row;
+    }
+
+    .feature_app {
+        padding-top: 2rem;
+        flex-direction: row;
+        width: 75%;
+    }
+    .feature_description {
+        margin-left: 95px;
+    }
+
 }
